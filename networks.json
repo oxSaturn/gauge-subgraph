@@ -1,0 +1,14 @@
+{
+  "base": {
+    "Voter": {
+      "address": "0xab9B68c9e53c94D7c0949FB909E80e4a29F9134A",
+      "startBlock": 1962664
+    }
+  },
+  "fantom": {
+    "Voter": {
+      "address": "0xc9Ea7A2337f27935Cd3ccFB2f725B0428e731FBF",
+      "startBlock": 64965187
+    }
+  }
+}
