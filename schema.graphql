@@ -1,0 +1,22 @@
+type ClaimedReward @entity(immutable: true) {
+  id: Bytes!
+  from: Bytes! # address
+  reward: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+  contract: Bytes!
+}
+type ClaimedRewardInTotal @entity {
+  id: Bytes!
+  contract: Bytes! # address
+  rewardToken: Bytes! # address
+  total: BigInt!
+}
+type Gauge @entity(immutable: true) {
+  id: Bytes!
+  creator: Bytes!
+  external_bribe: Bytes!
+  pool: Bytes!
+}

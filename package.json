@@ -1,0 +1,21 @@
+{
+  "name": "gauge-subgraph",
+  "license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ gauge-subgraph",
+    "create-local": "graph create --node http://0.0.0.0:8020/ gauge-subgraph",
+    "remove-local": "graph remove --node http://0.0.0.0:8020/ gauge-subgraph",
+    "deploy-local": "graph deploy --node http://0.0.0.0:8020/ --ipfs http://0.0.0.0:5001 gauge-subgraph",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.57.0",
+    "@graphprotocol/graph-ts": "0.30.0"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.6.0-rc.1"
+  }
+}
