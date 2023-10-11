@@ -22,6 +22,26 @@ dataSources:
       eventHandlers:
         - event: GaugeCreated(indexed address,address,indexed address,indexed address)
           handler: handleGaugeCreated
+  - kind: ethereum/contract
+    name: MaastaBoost
+    network: base
+    source:
+      address: "0x7503E653Fb91d5531c3A597BcAF0635FB096d795"
+      startBlock: 4842776
+      abi: MaastaBoost
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      file: ./src/maastaBoost.ts
+      abis:
+        - name: MaastaBoost
+          file: ./abis/MaastaBoost.json
+      entities:
+        - BoostedSale
+      eventHandlers:
+        - event: Boosted(indexed uint256,uint256,address)
+          handler: handleBoosted
 templates:
   - kind: ethereum/contract
     name: Gauge

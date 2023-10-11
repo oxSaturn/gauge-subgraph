@@ -20,3 +20,9 @@ type Gauge @entity(immutable: true) {
   external_bribe: Bytes!
   pool: Bytes!
 }
+type BoostedSale @entity(immutable: true) {
+  id: Bytes!
+  locker: Bytes!
+  totalLocked: BigInt!
+  timestamp: BigInt!
+}
