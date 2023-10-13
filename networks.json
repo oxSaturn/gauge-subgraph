@@ -13,6 +13,10 @@
     "Voter": {
       "address": "0xc9Ea7A2337f27935Cd3ccFB2f725B0428e731FBF",
       "startBlock": 64965187
+    },
+    "MaastaBoost": {
+      "address": "0x2d00ca8255352a3ba69a64cc88dded483d312bd8",
+      "startBlock": 69269524
     }
   }
 }
